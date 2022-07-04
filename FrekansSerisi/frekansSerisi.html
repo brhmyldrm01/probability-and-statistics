@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Frekans Serisi</title>
+    </head>
+    <body>
+      <div id="Input" >
+        <form >
+          <b>**Veri Eklemek için veriyi girip ekle butonuna basınız.</b><br>
+          <b>**Silmek istediğiniz veriyi veri girişi kısmına yazıp kaldır butonuna basınız.</b><br>
+          <b>**Veri girişinizi tamamladıktan sonra hesapla butonuna basınız.</b><br><br>
+          <p style="color: red;">Ondalıklı sayılar <b>. (nokta)</b> ile girilmelidir. Örnek : 7.5</p><br><br>
+        <label >Veri girişi:</label>  <input type="float" id="val"  required="true"  >  
+        <br><br> <input style="padding: 10px;" type="button" onclick="addValue(val)" value="Ekle" id="add">
+                  <input style="padding: 10px;" type="button" onclick="removeValue(val)" value="Kaldır" id="remove">
+                  <p id="values"></p><br><br>
+                  <input style="padding: 10px;" type="button" onclick="calculateFS()" value="Frekans Serisi Hesapla" id="calculate">
+      </div>
+      <p id="output"></p>
+      <script src="FS.js"></script>
+      </body>
+</html>
+
+

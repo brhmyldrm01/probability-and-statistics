@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Frekans Tablosu</title>
+    </head>
+    <body> <div id="Input" >
+      <form >
+        <b>**Veri Eklemek için veriyi girip ekle butonuna basınız.</b><br>
+        <b>**Silmek istediğiniz veriyi veri girişi kısmına yazıp kaldır butonuna basınız.</b><br>
+        <b>**Veri girişinizi tamamladıktan sonra hesapla butonuna basınız.</b><br><br>
+        <p style="color: red;">Ondalıklı sayılar <b>. (nokta)</b> ile girilmelidir. Örnek : 7.5</p><br><br>
+      <label >Veri girişi:</label>  <input type="float" id="val"  required="true"  >  
+      <br><br> <input style="padding: 10px;" type="button" onclick="addValue(val)" value="Ekle" id="add">
+                <input style="padding: 10px;" type="button" onclick="removeValue(val)" value="Kaldır" id="remove">
+                <p id="values"></p><br><br>
+                <input style="padding: 10px;" type="button" onclick="calculateFT()" value="Frekans Tablosu Hesapla" id="calculate">
+    </div>
+    <br> <br>
+    <div style="width: 100%; display: table; padding: 10px; margin-right: 10%; border: solid black 1px; ">
+      <div style="color: red; height: 10px; display: table-row; " id="output"></div> 
+      <div style="display: table-row; height: 250px; " >
+        <div style="width: 12%; display: table-cell; border: solid black 1px; " id="SL"></div>
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="SS"></div>    
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="SF"></div>
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="EF"></div>
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="SON"></div>
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="OF"></div>   
+        <div style="width: 12%; display: table-cell; border: solid black 1px;" id="EOF"></div>
+      </div>
+    </div>
+    <script src="FT.js"></script>
+    </body>
+
+         
+      </body>
+</html>
+
+

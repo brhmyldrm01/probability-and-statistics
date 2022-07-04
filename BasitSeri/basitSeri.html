@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Basit Seri</title>
+    </head>
+    <body>
+
+      <div id="amountInput" >
+        <form >
+        <label >Girilecek veri Miktarı :</label><input type="number" id="amount" min="0" required="true">
+    <br><br> <input type="button" onclick="setAmount(amount)" value="Onay" id="amountButton">
+      <br><br>
+        <label ><span id="seq"></span> Sayı :</label><input type="float" id="v" disabled="true" required="true">
+         <br><br>
+         <p style="color: red;">Ondalıklı sayılar <b>nokta (.)</b> ile girilmelidir. Örnek : 7.5</p>
+        <br> <br> <input type="button" onclick="calculate(v)" disabled="true" value="Ekle" id="hesapla">
+      </form >
+      
+      </div>
+      <p id="output"><br>
+        <p id="result"></p>
+      <script src="BS.js"></script>
+      </body>
+</html>
+
+

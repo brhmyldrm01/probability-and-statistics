@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Rastgele Sayı</title>
+    </head>
+    <body>
+        <div id="input" >
+          <form >
+          <label >Üretilecek Sayı Miktarı :</label><input type="number" id="miktar" min="0" required="true">
+         <br> <br> <label >Alt Sınır :</label><input type="number" id="altSinir" required="true"> <span></span>
+         <br> <br> <label >Üst Sınır :</label><input type="number" id="ustSinir" required="true"> <span></span>
+            <br> <br> <input type="button" onclick="randomUret(miktar,altSinir,ustSinir)" value="Rastgele sayı üret" id="hesapla">
+        </form >
+        </div>
+        <br>
+        <p id="output">
+
+        </p>
+
+        <script src="RS.js"></script>
+
+      </body>
+</html>
+
+
